@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --principal-color: #F5FBEF;
+    --secondary-color: #114B5F;
+    --deail-color: #BF1A2F;
+}
+
+body {
+    background:linear-gradient(45deg, #114b5f 0%, #2186a9 100%);
+    height: 100vh;
+
+}
+
+/* utils */
+
+.simetrico {
+    width: 90%;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 28px;
+}
+
+p {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* utils ------------------- */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-nav {
+    margin: 20px 0px 20px 0px;
+}
+
+.header-nav .header-nav-obj i {
+    font-size: 25px;
+}
+
+.header-hero .header-hero-text h1, p, i{
+    color: var(--principal-color);
+}
+
+.header-hero .header-hero-img{
+    margin-top: 40px;
+}
+
+.header-hero .header-hero-img img{
+    width: 100%;
+}
