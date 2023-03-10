@@ -86,7 +86,6 @@ i {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     color: var(--principal-color);
 }
 
@@ -104,10 +103,10 @@ i {
 }
 
 
-.carousel .element{
-    width: 50px;
-    height: 50px;
-
+.carousel__lista .element img{
+    width: auto;
+    height: 150px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,6 +114,13 @@ i {
     border-radius: 5px;
     background-color: #114b5f;
 }
+
+.carousel__lista .element {
+    margin-right: 5px;
+}
+
+
+
 
 .stats-section {
     display: flex;
@@ -148,6 +154,7 @@ i {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .proyectos { 

@@ -9,14 +9,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Signika+Negative:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Signika+Negative:wght@600&family=Work+Sans&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 
     <title>Angela Fernanda || landing page</title>
 </head>
@@ -54,10 +54,24 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
 
-                <div class="proyectos-carrusel">
-                    
-                    <h2 style="color: #0d3542;">Stand By</h2>
-    
+                <div class="carousel">
+                    <div class="carousel__contenedor">
+        
+                        <div class="carousel__lista">
+                            <div class="element">
+                                <img src="./img/JCF_sistemas.webp" alt="">
+                            </div>
+                            <div class="element">
+                                <img src="./img/Pokedex.webp" alt="">
+                            </div>
+                            <div class="element">
+                                <img src="./img/Julianismo.webp" alt="">
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div role="tablist" class="carousel__indicadores"></div>
                 </div>
             </div>
             
@@ -83,24 +97,20 @@
 
                     <div class="años-platzi card-grid">
                         <h2>2</h2>
-                        <p>Años</p>
+                        <p>Platzi años</p>
                     </div>
 
                     <div class="proyectos card-grid">
                         <h2>79</h2>
                         <p>Proyectos</p>
                     </div>
-
-
-                
                 </div>
             </div>
         </div>
     </main>
     
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="js/app.js" type="module"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </body>
 </html>
