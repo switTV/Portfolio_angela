@@ -21,15 +21,29 @@
     <title>Angela Fernanda || landing page</title>
 </head>
 <body>
-    <div class="bg-linear">
-
+    <div class="bg-linear"></div>
+    <div class="desplegable-menu">
+        
+        <div class="desplegable-menu-text">
+            <div class="desplegable-header-text">
+                <h2>Menu</h2>
+            </div>
+            <div class="desplegable-body-text">
+                <ul>
+                    <li><a href="#">Sobre mi</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ul>
+            </div>
+        </div>
+    
     </div>
     <header class="header">
         <div class="header-container simetrico">
             
             <div class="header-nav">
                 <div class="header-nav-obj">
-                    <i class="fa-solid fa-bars-staggered"></i>
+                    <i class="fa-solid fa-bars-staggered" id="bars_nav"></i>
                 </div>
             </div>
         
@@ -71,7 +85,6 @@
         
                     </div>
         
-                    <div role="tablist" class="carousel__indicadores"></div>
                 </div>
             </div>
             
@@ -108,9 +121,20 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div class="footer_container simetrico">
+            <div class="left_footer_content">
+                <p>Angela© 2023</p>
+            </div>
+            <div class="right_footer_content">
+                <a href="#">Mi Fiverr</a>
+            </div>
+        </div>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-    <script src="js/app.js" type="module"></script>
+    <script src="js/glide.js" type="module"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>

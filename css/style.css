@@ -116,7 +116,7 @@ i {
 }
 
 .carousel__lista .element {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 
@@ -184,4 +184,27 @@ i {
     align-items: center;
     text-align: center;
 }
-  
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 50px;
+    width: 100%;
+
+    margin-top: 20px;
+
+    background-color: var(--secondary-color);
+}
+
+footer .footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .footer_container a {
+    color: var(--principal-color);
+    font-family: "Signika Negative", sans-serif;
+}
