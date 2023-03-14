@@ -22,24 +22,28 @@
 </head>
 <body>
     <div class="bg-linear"></div>
-    <div class="desplegable-menu">
+    <div class="bg-black desactivado" id="bg_black"></div>
+    <div class="desplegable-menu desactivado" id="desplegable-menu">
         
         <div class="desplegable-menu-text">
             <div class="desplegable-header-text">
-                <h2>Menu</h2>
+                <div class="icon-bars">
+                    <i class="fa-solid fa-bars" id="bars_2"></i>
+                </div>
+                <h2>Menú</h2>
             </div>
             <div class="desplegable-body-text">
                 <ul>
-                    <li><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Stats</a></li>
+                    <li><a href="#sobre_mi">Sobre mi</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#stats">Stats</a></li>
                 </ul>
             </div>
         </div>
     
     </div>
     <header class="header">
-        <div class="header-container simetrico">
+        <div class="header-container simetrico" id="sobre_mi">
             
             <div class="header-nav">
                 <div class="header-nav-obj">
@@ -60,7 +64,7 @@
         
     </header>
     <main class="main">
-        <div class="proyectos-section">
+        <div class="proyectos-section" id="proyectos">
             <div class="proyectos-section-container simetrico">
                 
                 <div class="proyectos-text">
@@ -90,7 +94,7 @@
             
         </div>
     
-        <div class="stats-section">
+        <div class="stats-section" id="stats">
             <div class="container-stats simetrico">
                 <div class="stat-text">
                     <h2>Stats</h2>
