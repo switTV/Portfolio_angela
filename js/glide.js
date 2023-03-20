@@ -1,7 +1,7 @@
 window.addEventListener('load', function(){
 	new Glider(document.querySelector('.carousel__lista'), {
-		slidesToShow: 1.1,
-		slidesToScroll: 1.1,
+		slidesToShow: 1.2,
+		slidesToScroll: 1.2,
 		draggable: false,
 		responsive: [
 			{
@@ -18,9 +18,7 @@ window.addEventListener('load', function(){
 			  // screens greater than >= 1024px
 			  breakpoint: 800,
 			  settings: {
-				slidesToShow: 4,
-				slidesToScroll: 4,
-				draggable: false,
+				
 
 			  }
 			}

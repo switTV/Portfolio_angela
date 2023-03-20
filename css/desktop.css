@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+    .header-hero .header-hero-img img {
+        width: 100%;
+    }
+    .header-container .header-hero{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .simetrico {
+        width: 50%;
+    }
+
+    .carousel__desactivado{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px 5px; 
+        grid-template-areas: 
+        "element1 element1 element3"
+        "element2 element2 element4"; 
+    }
+
+    .element {
+        background-color: aqua;
+
+        border-radius: 5px;
+
+        background-size:cover;
+        height: 250px;
+    }
+
+    .element1 { 
+        grid-area: element1;
+        background-image: url(../img/JCF_sistemas.webp);
+    }
+    .element2 { 
+        grid-area: element2; 
+        background-image: url(../img/Julianismo.webp);
+    }
+    .element3 { 
+        grid-area: element3;
+        background-image: url(../img/solar_system_web.png);
+        background-position: center;
+        
+    }
+    .element4 { 
+        grid-area: element4; 
+        background-image: url(../img/HBO_minus.webp);
+    }
+}

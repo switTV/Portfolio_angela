@@ -9,9 +9,11 @@
     --deail-color: #BF1A2F;
 }
 
-body {
-    
+html {
+    scroll-behavior: smooth;
+}
 
+body {
 }
 
 .bg-linear {
@@ -91,6 +93,7 @@ header {
     border-bottom: 2px var(--deail-color) solid;
     margin-bottom: 20px;
     margin-right: 10px;
+    list-style: none;
     
 }
 
@@ -113,11 +116,11 @@ header {
 .desactivado {
     opacity: 0;
     z-index: -1;
+    display: none;
 }
 
 .activado {
     z-index: 1;
-    position: fixed;
 }
 
 .header-nav .header-nav-obj i {
