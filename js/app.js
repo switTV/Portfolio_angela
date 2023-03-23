@@ -7,34 +7,36 @@ let carrusel_container = document.getElementById("carousel_container")
 let desplegable_menu = document.getElementById("desplegable-menu")
 
 bars_nav.addEventListener("click", () => {
-    desplegable_menu.classList.toggle("activado")
     desplegable_menu.classList.remove("desactivado")
-    
-    bg_black.classList.toggle("activado")
+    desplegable_menu.classList.add("activado")
+
+    chevron_left.classList.add("activado")
+    chevron_left.classList.remove("desactivado")
+
+    bg_black.classList.add("activado")
     bg_black.classList.remove("desactivado")
-
 })
+
 chevron_left.addEventListener("click", () => {
+    desplegable_menu.classList.add("desactivado")
     desplegable_menu.classList.remove("activado")
-    desplegable_menu.classList.toggle("desactivado")
 
-    bg_black.classList.toggle("desactivado")
     bg_black.classList.remove("activado")
-
+    bg_black.classList.add("desactivado")
 })
+
 bg_black.addEventListener("click", () => {
+    desplegable_menu.classList.add("desactivado")
     desplegable_menu.classList.remove("activado")
-    desplegable_menu.classList.toggle("desactivado")
 
-    bg_black.classList.toggle("desactivado")
     bg_black.classList.remove("activado")
-
+    bg_black.classList.add("desactivado")
 })
 
 window.addEventListener("resize", adapatarResize)
 
-function adapatarResize() {
-    if (window.innerWidth >= 1024){
+function adapatarResize(desktop) {
+    if (window.innerWidth >= desktop){
         element_carrusel.forEach(elementsCarrusel => {
             elementsCarrusel.classList.add("desactivado")
             carrusel_container.classList.remove("carousel__lista")
@@ -45,13 +47,11 @@ function adapatarResize() {
     else {
         element_carrusel.forEach(elementsCarrusel => {
             elementsCarrusel.classList.toggle("activado")
-            
-            carrusel_container.classList.add("carousel__lista")
-            carrusel_container.classList.remove("carousel__desactivado")
+            carrusel_container.classList.toggle("carousel__lista")
         })
     }
 }
 
-adapatarResize()
+adapatarResize(1024)
 
 console.log(window.innerWidth)
